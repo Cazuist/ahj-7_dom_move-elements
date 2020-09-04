@@ -1,0 +1,27 @@
+.board-field {
+  --size: 4;
+  
+  display: grid;
+  grid-gap: 10px;
+  grid-template: repeat(var(--size), 100px) / repeat(var(--size), 100px);
+}
+
+.board-cell {  
+  border: 1px solid black;
+  border-radius: 10px;
+  background:
+    url("../img/hole.png"), 
+    linear-gradient(to right top, green, gray, blue, black);
+
+  background-size: 90%, 100%;
+  background-repeat: no-repeat;
+  background-position: center;  
+}
+
+.character {
+  height: 100%;
+  background-image: url("../img/goblin.png");
+  background-size: 55%;
+  background-repeat: no-repeat;
+  background-position: center; 
+}
